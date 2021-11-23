@@ -58,7 +58,8 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block text-right mb-5">
                             <h1 class="display-3">Heading One</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
                             <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
                         </div>
                     </div>
@@ -67,7 +68,8 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block mb-5">
                             <h1 class="display-3">Heading Two</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
                             <a href="#" class="btn btn-primary btn-lg">Learn More</a>
                         </div>
                     </div>
@@ -76,7 +78,8 @@
                     <div class="container">
                         <div class="carousel-caption d-none d-sm-block text-right mb-5">
                             <h1 class="display-3">Heading Three</h1>
-                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
+                            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                eligendi quam vitae minima ea autem aliquam harum atque consectetur dolore.</p>
                             <a href="#" class="btn btn-success btn-lg">Learn More</a>
                         </div>
                     </div>
@@ -88,6 +91,44 @@
             <a href="#myCarousel" data-slide="next" class="carousel-control-next">
                 <span class="carousel-control-next-icon"></span>
             </a>
+        </div>
+    </section>
+
+    <!-- HOME ICON SECTION -->
+    <section class="py-5" id="homeIcons">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cog fa-3x mb-2"></i>
+                    <h3>Turning Gears</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, praesentium.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cloud fa-3x mb-2"></i>
+                    <h3>Sending Data</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, praesentium.</p>
+                </div>
+                <div class="col-md-4 mb-4 text-center">
+                    <i class="fas fa-cart-plus fa-3x mb-2"></i>
+                    <h3>Making Money</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae, praesentium.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOME HEADING SECTION -->
+    <section id="homeHeading" class="p-5">
+        <div class="dark-overlay">
+            <div class="row">
+                <div class="col">
+                    <div class="container pt-5">
+                        <h1>Are You Ready To Get Started?</h1>
+                        <p class="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vitae
+                            obcaecati mollitia quas aut fugiat eos dicta error. Assumenda, nisi.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -103,6 +144,12 @@
     <script>
         // Get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        // Config Slider
+        $('.carousel').carousel({
+            interval: 6000,
+            pause: 'hover'
+        });
     </script>
 </body>
 
