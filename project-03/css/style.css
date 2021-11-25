@@ -93,3 +93,8 @@ body {
 #faq .card-header {
   background: #333;
 }
+
+#mainFooter {
+  background: black;
+  color: aliceblue
+}
