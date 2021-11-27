@@ -19,7 +19,7 @@
     <!-- NAV SECTION -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
         <div class="container">
-            <a href="index.html" class="navbar-brand">Blogen</a>
+            <a href="index.html" class="navbar-brand text-warning h1">Project 04</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,6 +50,7 @@
                             <a href="profile.html" class="dropdown-item">
                                 <i class="fas fa-cog"></i> Settings
                             </a>
+                            <div class="dropdown-divider"></div>
                             <a href="login.html" class="dropdown-item">
                                 <i class="fas fa-user-times"></i> Logout
                             </a>
@@ -136,7 +137,7 @@
                 </div>
                 <div class="modal-footer">
                     <button class="btn btn-primary" data-dismiss="modal">
-                        <i class="fas fa-comment"></i> Save Post</button>
+                        <i class="fas fa-pencil-alt"></i> Save Post</button>
                 </div>
             </div>
         </div>
@@ -205,6 +206,142 @@
             </div>
         </div>
     </div>
+
+    <!-- POSTS -->
+    <section id="posts">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-9">
+                    <div class="card">
+                        <div class="card-header text-center">
+                            <h4>Latest Posts</h4>
+                        </div>
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title</th>
+                                    <th>Category</th>
+                                    <th>Date</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Post One</td>
+                                    <td>Business</td>
+                                    <td>Feb 08</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Post Two</td>
+                                    <td>Tech & Gadgets</td>
+                                    <td>May 03</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Post Three</td>
+                                    <td>Web Development</td>
+                                    <td>April 12</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>Post Four</td>
+                                    <td>Business</td>
+                                    <td>August 22</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>Post Five</td>
+                                    <td>Web Development</td>
+                                    <td>March 29</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>Post Six</td>
+                                    <td>Freelancing</td>
+                                    <td>July 17</td>
+                                    <td>
+                                        <a href="details.html" class="btn btn-outline-danger text-dark">
+                                            <i class="fas fa-angle-double-right text-danger"></i> View Post
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white mb-3">
+                        <div class="card-body">
+                            <h3>Posts</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-pencil-alt"></i> 6
+                            </h4>
+                            <a href="posts.html" class="btn btn-outline-light btn-sm">View Posts</a>
+                        </div>
+                    </div>
+                    <div class="card text-center bg-success text-white mb-3">
+                        <div class="card-body">
+                            <h3>Categories</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-tags"></i> 4
+                            </h4>
+                            <a href="categories.html" class="btn btn-outline-light btn-sm">View Categories</a>
+                        </div>
+                    </div>
+                    <div class="card text-center bg-warning text-dark mb-3">
+                        <div class="card-body">
+                            <h3>Users</h3>
+                            <h4 class="display-4">
+                                <i class="fas fa-users"></i> 5
+                            </h4>
+                            <a href="users.html" class="btn btn-outline-dark btn-sm">View Users</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="mainFooter" class="text-center mt-5 p-5 bg-dark text-light">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left d-flex justify-content-between">
+                    <p class="h5">Copyright &copy; <span id="year" class="mr-3"></span> <span
+                            class="text-warning">Project
+                            04</span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- SCRIPT SECTION -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
