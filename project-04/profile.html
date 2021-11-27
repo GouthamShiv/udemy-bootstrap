@@ -32,7 +32,7 @@
                         <a href="posts.html" class="nav-link">Posts</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a href="categories.html" class="nav-link active">Categories</a>
+                        <a href="categories.html" class="nav-link">Categories</a>
                     </li>
                     <li class="nav-item px-2">
                         <a href="users.html" class="nav-link">Users</a>
@@ -62,101 +62,72 @@
     </nav>
 
     <!-- HEADER -->
-    <header id="mainHeader" class="py-2 bg-success text-white">
+    <header id="mainHeader" class="py-2 bg-secondary text-white">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1><i class="fas fa-tags"></i> Categories</h1>
+                    <h1><i class="fas fa-address-card"></i> User Profile</h1>
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- SEARCH -->
-    <section id="search" class="py-4 mb-4 bg-dark">
+    <!-- ACTIONS -->
+    <section id="actions" class="py-4 mb-4 bg-dark">
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row justify-content-center">
                 <div class="col-md-3">
                     <a href="index.html" class="btn btn-light btn-block">
                         <i class="fas fa-arrow-left"></i> Back To Dashboard
                     </a>
                 </div>
-                <div class="col-md-6">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Categories...">
-                        <div class="input-group-append">
-                            <button class="btn btn-success">
-                                <i class="fas fa-search"></i> Search
-                            </button>
-                        </div>
-                    </div>
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-success btn-block">
+                        <i class="fas fa-lock"></i> Change Password
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="index.html" class="btn btn-danger btn-block">
+                        <i class="fas fa-trash"></i> Delete Account
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CATEGORIES -->
-    <section id="categories">
+    <!-- PROFILE -->
+    <section id="profile">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-md-9">
                     <div class="card">
                         <div class="card-header text-center">
-                            <h4 class="text-success">Current Categories</h4>
+                            <h4 class="text-secondary">Edit Profile</h4>
                         </div>
-                        <table class="table table-striped">
-                            <thead class="thead-dark">
-                                <tr>
-                                    <th>#</th>
-                                    <th>Title</th>
-                                    <th>Date</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>Business</td>
-                                    <td>Feb 08</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-outline-success text-dark">
-                                            <i class="fas fa-angle-double-right text-success"></i> View
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>2</td>
-                                    <td>Tech & Gadgets</td>
-                                    <td>May 03</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-outline-success text-dark">
-                                            <i class="fas fa-angle-double-right text-success"></i> View
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>3</td>
-                                    <td>Web Development</td>
-                                    <td>April 12</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-outline-success text-dark">
-                                            <i class="fas fa-angle-double-right text-success"></i> View
-                                        </a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>4</td>
-                                    <td>Freelancing</td>
-                                    <td>July 17</td>
-                                    <td>
-                                        <a href="details.html" class="btn btn-outline-success text-dark">
-                                            <i class="fas fa-angle-double-right text-success"></i> View
-                                        </a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="card-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" value="Goutham Shiv">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" value="admin@test.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="bio">Bio</label>
+                                    <textarea name="bio"
+                                        class="form-control">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ad, perspiciatis enim eius culpa illo porro perferendis, eaque, ducimus nisi itaque ipsum aliquam consectetur quasi sit adipisci. Est vel, maiores quos, nisi nihil asperiores officia placeat ullam dicta fugiat consequuntur!</textarea>
+                                </div>
+                            </form>
+                        </div>
                     </div>
+                </div>
+                <div class="col-md-3">
+                    <h3>Your Avatar</h3>
+                    <img src="img/avatar.png" alt="" class="d-block img-fluid mb-3">
+                    <button class="btn btn-primary btn-block">Update Avatar</button>
+                    <button class="btn btn-danger btn-block">Remove Avatar</button>
                 </div>
             </div>
         </div>
@@ -184,9 +155,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
         integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ckeditor/4.17.1/ckeditor.js"
+        integrity="sha512-VXEKi5eNc7ECuyIueuledlqeUWiJ7hcxBe9fnsCiVzeZ0XwJxAPemnq01/LBIBnp3i0szhvKNd9Us7fqNPsRmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         // Get the current year for the copyright
         $('#year').text(new Date().getFullYear());
+
+        // CKEditor init
+        CKEDITOR.replace('bio');
     </script>
 </body>
 
