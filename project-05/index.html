@@ -104,6 +104,71 @@
             </div>
         </div>
 
+        <!-- RESUME -->
+        <div id="resume" class="collapse">
+            <div class="card card-body bg-success text-white py-5">
+                <h2>My Resume</h2>
+                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est sequi asperiores,
+                    explicabo hic nisi tenetur!</p>
+            </div>
+            <div class="card card-body py-5">
+                <h3>Where All I Have Worked!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi et provident ab inventore nemo error
+                    quia? Aspernatur quasi sequi esse voluptates aperiam, dolor quas laudantium accusantium nisi
+                    praesentium corporis deserunt!</p>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">DevMasters</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+                                quasi magnam enim autem? Quam, suscipit saepe.</p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Position: Full Stack Developer
+                            </p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Phone: (444) 444-4444
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2020 - Present</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">123 Designs</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+                                quasi magnam enim autem? Quam, suscipit saepe.</p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Position: Backend Developer
+                            </p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Phone: (222) 222-2222
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2018 - 2020</h6>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Web Designer Pro</h4>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate
+                                quasi magnam enim autem? Quam, suscipit saepe.</p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Position: DevOps Engineer
+                            </p>
+                            <p class="p-2 m-3 bg-dark text-white">
+                                Phone: (666) 666-666
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <h6 class="text-muted">Dates: 2015 - 2018</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- FOOTER -->
         <footer id="main-footer" class="p-5 bg-dark text-white">
             <div class="row">
@@ -126,8 +191,9 @@
         crossorigin="anonymous"></script>
 
     <script>
-        // Get the current year for the copyright
-        $('#year').text(new Date().getFullYear());
+        $('.port-item').click(function () {
+            $('.collapse').collapse('hide');
+        });
     </script>
 </body>
 
